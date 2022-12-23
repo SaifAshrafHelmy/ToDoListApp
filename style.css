@@ -98,22 +98,46 @@
   #todo-list input[type="checkbox"] {
     display: none;
   }
-
-
-  #todo-list li:hover .delete-button,input[type="checkbox"] {
+  
+  #todo-list li:hover input[type="checkbox"] {
     display: inline-block;
   }
-  #todo-list li:hover input[type="checkbox"] {
-    display:block;
+  
+  #todo-list li:hover .delete-button  {
+    display: inline-block;
   }
 
-  @media screen and (min-width: 500px) and (max-width: 800px) {
+
+
+  
+
+
+  @media (max-width: 800px) {
     body {
-      width: 100%;
-      background: green;
+      width: 80%;
+      overflow: hidden;
     }
     #todo-input {
-      background-color: red;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
+  }
+  @media (max-width: 600px) {
+    body {
+      width: 90%;
+    }
+    #todo-input {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    #todo-list li {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    button[type="submit"] {
+      margin-right: 5px;
+    }
+     
+  
 
   }
