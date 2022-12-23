@@ -39,8 +39,7 @@ function addTodo(text, done) {
     }
     ifChecked();
 
-    deleteButton.classList.toggle('delete-button1')
-    deleteButton.classList.toggle('delete-button2')
+    
   });   
 
   checkbox.addEventListener('change', e => {
